@@ -115,7 +115,6 @@
                         {
                             "type": "archive",
                             "url": "https://download.libvirt.org/libvirt-12.7.0.tar.xz",
-                            "sha256": "7ec1a04e7e4f4069353d4daac117bbe869287f5b202695de61fe1b079efb6cb6"
                         },
                         {
                             "type": "patch",
@@ -191,7 +190,7 @@
                     "name": "python-pyparsing",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "pip3 install --prefix=/app pyparsing-3.3.2-py3-none-any.whl"
+                        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyparsing\" --no-build-isolation"
                     ],
                     "sources": [
                         {
