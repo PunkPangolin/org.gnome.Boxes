@@ -450,29 +450,6 @@
             ]
         },
         {
-            "name": "libportal",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbackend-gtk3=enabled",
-                "-Dbackend-gtk4=disabled",
-                "-Ddocs=false",
-                "-Dtests=false"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/flatpak/libportal",
-                    "tag": "0.11.0",
-                    "commit": "fc4d62cfe131e8494c82f597f92b2234d584c367",
-                    "x-checker-data": {
-                        "type": "git",
-                        "url": "https://github.com/flatpak/libportal",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
             "name": "libhandy",
             "buildsystem": "meson",
             "sources": [
