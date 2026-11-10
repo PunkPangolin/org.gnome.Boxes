@@ -501,6 +501,10 @@
                         "type": "gnome",
                         "name": "gnome-boxes"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-metainfo.patch"
                 }
             ]
         }
